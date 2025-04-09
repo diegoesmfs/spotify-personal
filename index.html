@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Hollow </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body onload="PlayList()">
+    <div id="front">
+        <div id="left-column">
+          <table id="_table">
+            <thead>
+          
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+            <div id="principales">
+              <button class='btnRandom' onclick="random()" style="font-size: 24px; font-weight: bold;">&#8634;</button>
+              <button class="btnPlay" onclick="playSong()" style="font-size: 24px; font-weight: bold;">&#9654;</button>
+            </div>
+          </table>
+        </div>
+        <div id="right-column">
+          <div id="top-section">
+            <div id="image">
+              <img id="imagen" src="" alt="Album no disponible" width='300' height='300'>
+            </div>
+          </div>
+          <div class="player-info">
+            <audio id="player" controls></audio>
+        </div>
+          <div id="detail">
+            <label id="lti">
+              <span id="ti"> </span>
+            </label>
+            <br>
+            <label id="lar">
+              <span id="ar"> </span>
+            </label> 
+          </div>
+          <div id="bots">
+            <button class='btnPrevius' onclick='previusMusic(" + JSON.stringify(data[i]) + ")' style='font-size: 24px; font-weight: bold;'> &#9664; </button>
+            <button class='btnRepeat' onclick='repeatMusic(" + JSON.stringify(data[i]) + ")' style='font-size: 24px; font-weight: bold;'> &#x27F2; </button>
+            <button class='btnStop' onclick='stopMusic(" + JSON.stringify(data[i]) + ")' style='font-size: 24px; font-weight: bold;'> &#8214; </button>
+            <button class='btnNext' onclick='nextMusic(" + JSON.stringify(data[i]) + ")' style='font-size: 24px; font-weight: bold;'>&#9654;</button>
+          </div>
+        </div>
+      </div>
+    
+    <div id = "commentSection"> 
+
+        <label> Comentarios </label>
+        <br />
+        <br />
+        <label for="nombre"> Usuario: </label>
+        <br />
+        <input id = "nombre" type = "text" />
+        <br />
+        <label for="comentarios"> Agregar Comentario: </label>
+        <br />
+        <input id = "comentarios" type = "text" />
+        <button id = "btnPublic" onclick="comentarios()"> Publicar </button>
+        <br />
+        <br />
+        <label id="comments">
+            <span id="comment"> </span>
+        </label> 
+        <br />
+        <label id="song">
+        </label>
+
+    </div>
+
+    <script src="./script/music.js"></script>
+</body>
+</html>

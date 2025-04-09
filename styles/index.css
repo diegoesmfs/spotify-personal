@@ -1,0 +1,235 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: #221d1d;
+  }
+  input[type="text"], input[type="number"], input[type="date"] {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  button {
+    background-color: #570c51;
+    color: #350b0b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 320px;
+    height: 50px;
+  }
+  button:hover {
+    background-color: #380834;
+  }
+  .btnMusic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el título de la canción */
+  .btnMusic span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilos para el contenedor de la canción */
+  .btnMusic {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #570c51;
+    color: #b1adad;
+    cursor: pointer;
+  }
+  
+  .btnMusic:hover {
+    background-color: #380834;
+  }
+  .btnPrevius {
+
+    width: 50px;
+    height: 50px;
+
+  }
+  .btnStop{
+
+    width: 50px;
+    height: 50px;
+
+  }
+  .btnNext{
+
+    width: 50px;
+    height: 50px;
+
+  }
+  .btnRepeat{
+
+    width: 50px;
+    height: 50px;
+
+  }
+  #bots{
+
+    text-align: center;
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    border: 1px solid #272525;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+     justify-content: center;
+
+  }
+
+  #bots button {
+
+     display: inline-block;
+     margin: 0 10px;
+     width: 100px;
+     height: 100px;
+
+  }
+  .player-info {
+    text-align: center;
+    width: 500px; 
+    height: 80px; 
+    background-color: #221d1d; 
+    border: 1px solid #221d1d; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; 
+  }
+  
+  #player {
+    display: block;
+    width: 100%;
+  }
+  #image {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #image {
+    display: block;
+    margin: 0 auto;
+  }
+  #conTable{
+
+    flex-basis: 30%;
+    margin-right: 20px;
+
+  }
+  #front {
+    display: flex;
+    flex-direction: row;
+    max-width: 1020px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    color: #221d1d;
+    border: 1px solid #221d1d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #221d1d(196, 139, 139, 0.1);
+  }
+  
+  #left-column {
+    flex-basis: 57%;
+    max-width: 880px;
+    max-height: 840px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    color: #5f5555;
+    border: 1px solid #272525;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(196, 139, 139, 0.1);
+    overflow-y: scroll;
+
+    scrollbar-color: #570c57 #222;
+    scrollbar-width: thin;
+  
+  }
+  
+  #right-column {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 880px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    color: #5f5555;
+    border: 1px solid #272525;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(196, 139, 139, 0.1);
+  }
+  
+  #top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+  #bots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #detail{
+
+    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    color: #5f5555;
+    border: 1px solid #272525;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(196, 139, 139, 0.1);
+
+  }
+  #commentSection{
+
+    max-width: 880px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #221d1d;
+    color: #5f5555;
+    border: 1px solid #272525;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(196, 139, 139, 0.1);
+    
+
+  }
+  #commentSection button{
+
+    width: 90px;
+    height: 30px;
+
+  }
+  #principales {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
