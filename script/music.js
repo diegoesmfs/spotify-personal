@@ -394,8 +394,10 @@ playList.push(jsonPlayList);
 console.log(playList.length);
 
 //mostrar la lista de canciones
-function PlayList() {
-     var output = "";
+
+const playList = () =>{
+
+    var output = "";
     var data = jsonPlayList;
 
     for (var i in data) {
@@ -414,27 +416,34 @@ function PlayList() {
     document.getElementById("tbody").innerHTML = output;
 }
 
+
 //funcion para mostrar las opciones de la cancion que se este reproduciendo junto su imagen
-function showOptions(id) {
+
+const showOptions = (id) => {
+
     let optionElement = document.getElementById("option" + id);
     console.log(optionElement);
     if (optionElement) {
       optionElement.style.display = "block";
     }
+
 }
 
 //funcion para ocultar las opciones de la cancion que se omitio o se termino 
-function hideOptions(id) {
-    
+
+const hideOptions = (id) =>{
+
     let optionElement = document.getElementById("option" + id);
     if (optionElement) {
       optionElement.style.display = "none";
     }
-  }
+
+}
 
 //funcion para tocar las canciones
-function playMusic(audio) {
-    
+
+const playMusic = (audio) =>{
+
     var player = document.getElementById("player");
 
     document.getElementById("ti").innerHTML = audio.titulo;
@@ -490,8 +499,10 @@ function playMusic(audio) {
     };
 
 }
+
   //funcion para pausar y reaundar la cancion actual
-function stopMusic(){
+
+const stopMusic = () =>{
 
     var stopper = document.getElementById("player");
 
@@ -508,6 +519,7 @@ function stopMusic(){
     }
 
 }
+
 //funcion para repetir la cancion actual "n" cantidad de veces
 function repeatMusic(){
 
